@@ -1,6 +1,54 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
 .helloWorld {
+  .buttonGroup {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .searchHead {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .btnSale,
+  .btnHr,
+  .btnMrkt,
+  .btnIt,
+  .btnAcc {
+    border: none;
+    border-radius: 12px;
+    min-width: 90px;
+    padding: 0 10px;
+    margin: 0.6rem;
+    font-weight: bold;
+  }
+  .btnSale {
+    background-color: #ffd74a;
+  }
+  .btnHr {
+    background-color: #ff95c1;
+  }
+  .btnMrkt {
+    background-color: #9cfcbd;
+  }
+  .btnIt {
+    background-color: #a6bfff;
+  }
+  .btnAcc {
+    background-color: #ff7070;
+  }
+
+  .searchField {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .searchInput,
+  .selectField {
+    width: 200px;
+    padding: 15px;
+    border-radius: 12px;
+    margin-left: 1rem;
+  }
+
   .container {
     max-width: 700px;
     margin: 0px auto;
@@ -11,7 +59,7 @@
     @include ms-Grid-row;
     @include ms-fontColor-white;
     background-color: $ms-color-themeDark;
-    padding: 20px;
+    padding: 0 20px;
   }
 
   .column {
@@ -51,7 +99,8 @@
     // Basic Button
     outline: transparent;
     position: relative;
-    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-family: 'Segoe UI WestEuropean', 'Segoe UI', -apple-system,
+      BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: $ms-font-size-m;
     font-weight: $ms-font-weight-regular;

@@ -20,16 +20,36 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         <div class="${styles.container}">
           <div class="${styles.row}">
             <div class="${styles.column}">
-              <span class="${styles.title}">Welcome to jdjkdsjk!</span>
-              <p class="${
-                styles.subTitle
-              }">Customize SharePoint experiences using Web Parts.</p>
-              <p class="${styles.description}">${escape(
-      this.properties.description
-    )}</p>
-              <a href="https://aka.ms/spfx" class="${styles.button}">
-                <span class="${styles.label}">Learn more</span>
-              </a>
+              <div class="${styles.buttonGroup}">
+              <p class="${styles.searchHead}">Search by Department</p>
+                <button class="${styles.btnSale}">Sales</button>
+                <button class="${styles.btnHr}">HR</button>
+                <button class="${styles.btnMrkt}">Marketing</button>
+                <button class="${styles.btnIt}">IT</button>
+                <button class="${styles.btnAcc}">Account</button>
+              </div>
+            </div>
+
+            <div class="${styles.column}">
+              <div class="${styles.searchField}">
+              <p class="${styles.searchHead}">Search by Keyword</p>
+              <input type="text" class="${styles.searchInput}"></input>
+              </div>
+            </div>
+
+            <div class="${styles.column}">
+              <div class="${styles.searchField}">
+              <p class="${styles.searchHead}">Search by Metadata</p>
+
+              <select class="${styles.selectField}" id="cars">
+                <option value="Malmo">Malmo</option>
+                <option value="Goteborg">Goteborg</option>
+                <option value="Stockholm">Stockholm</option>
+                <option value="Halmstad">Halmstad</option>
+                <option value="Kalmar">Kalmar</option>
+                <option value="Helsingborg">Helsingborg</option>
+              </select>
+              </div>
             </div>
           </div>
         </div>
